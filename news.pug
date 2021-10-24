@@ -1,0 +1,164 @@
+extends ./src/_extends/common
+
+block style
+	link(rel="stylesheet" href="./styles/main.css")
+	link(rel="stylesheet" href="./styles/header.css")
+	link(rel="stylesheet" href="./styles/footer.css")
+	link(rel="stylesheet" href="./styles/news.css")
+	block title
+		title WebForYou
+block content
+	+header()
+	.container
+		+scroll()
+		+contact-btn()
+		+contacts()
+		main
+		.e-pages
+  ul.e-pages__list__system
+    li.e-pages__item
+      a.e-pages__link(href='#')
+        span.e-pages__text Linux
+    li.e-pages__item
+      a.e-pages__link(href='#')
+        span.e-pages__text Windows
+    li.e-pages__item
+      a.e-pages__link(href='#')
+        span.e-pages__text Android
+    li.e-pages__item
+      a.e-pages__link(href='#')
+        span.e-pages__text iOs
+.news
+  // info block
+  .news__wrapper
+    // block
+    .news__card
+      .news__card__wallpaper
+        img.news__card__img(src='./assets/images/news/1.2.jpg' alt='info_img')
+      .news__card__content
+        span.news__card__name 
+		  | Iphone 13
+        a.news__card__title(href='#')
+          | Дайте богачу $1000 и он вернется с $100000, дайте бедняку $1000 и
+		  | он вернется с Iphone 13.
+        button.card__button Read more
+    // block
+    #news_card.news__card
+      .news__card__wallpaper
+        img.news__card__img(src='./assets/images/news/2.jpg' alt='info_img')
+      .news__card__content
+        span.news__card__name 
+		  |Права на стартап
+        a.news__card__title(href='#')
+          | Интеллектуальная собственность в наше время является несомненным активом, причем иногда очень и очень
+          | дорогим. Допустим, вы придумали что-то очень цен...
+        button.card__button Read more
+    // block
+    .news__card
+      .news__card__wallpaper
+        img.news__card__img(src='./assets/images/news/3.jpg' alt='info_img')
+      .news__card__content
+        span.news__card__name
+          | Бэкап на сервере?
+        a.news__card__title(href='#')
+          | «Много бэкапов мало не бывает» — этот афоризм слышали многие, но вот детальное представление о том,
+          | что же такое бэкап и как его правильно сделать, им...
+        button.card__button Read more
+    // block
+    .news__card
+      .news__card__wallpaper
+        img.news__card__img(src='./assets/images/news/4.jpg' alt='info_img')
+      .news__card__content
+        span.news__card__name 
+		  | Гаджеты + учеба
+        a.news__card__title(href='#')
+          | Когда учебный год уверенно стартовал и необходимые планшеты и
+          | ноутбуки для школьников и студентов уже были куплены, мы подобрали шесть нетривиальных г...
+        button.card__button Read more
+    // block
+    .news__card
+      .news__card__wallpaper
+        img.news__card__img(src='./assets/images/news/zoom.png' alt='info_img')
+      .news__card__content
+        span.news__card__name 
+		  | Logitech Scribe
+        a.news__card__title(href='#')
+          | Предназначение Logitech Scribe – трансляция изображений с настенной доски посредством приложений для
+          | телеконференций: Microsoft Teams Rooms, Zoom Rooms и другими ведущими платформами видеосвязи.
+        button.card__button Read more
+    // block
+    .news__card
+      .news__card__wallpaper
+        img.news__card__img(src='./assets/images/news/vivo.jpg' alt='info_img')
+      .news__card__content
+        span.news__card__name 
+		  | Vivo TWS 2 series
+        a.news__card__title(href='#')
+          | Наушники TWS 2 ANC весят 4,7 гр. В комплекте три размера мягких гибких амбушюр. Инновационная система
+          | вентиляции и продуманный переход между передней и задней камерами наушника способствуют выравниванию
+          | давления.
+        button.card__button Read more
+    // block
+    .news__card
+      .news__card__wallpaper
+        img.news__card__img(src='./assets/images/news/rad.jpg' alt='info_img')
+      .news__card__content
+        span.news__card__name 
+		| Radeon RX 6600
+        a.news__card__title(href='#')
+          | Видеокарта использует архитектуру AMD RDNA 2, единственную игровую архитектуру, которая
+          | распространяется от настольных ПК, ноутбуков и консолей до мобильных устройств и автомобильных
+          | информационно-развлекательных систем. 
+        button.card__button Read more
+    // block
+    .news__card
+      .news__card__wallpaper
+        img.news__card__img(src='./assets/images/news/jabr.jpg' alt='info_img')
+      .news__card__content
+        span.news__card__name 
+		| Jabra Evolve2 75
+        a.news__card__title(href='#')
+          | Новая конструкция амбушюр с применением двух видов пеноматериала и покрытием из эко-кожи отличается
+          | улучшенной вентиляцией и пониженным давлением на уши.
+        button.card__button Read more
+    .news__card
+      .news__card__wallpaper
+        img.news__card__img(src='./assets/images/news/log.jpg' alt='info_img')
+      .news__card__content
+        span.news__card__name
+		  | Logitech G и Riot
+        a.news__card__title(href='#')
+          | Среди преимуществ беспроводной гарнитуры PRO X League of Legends
+          | Edition - большие 50-мм драйверы, поддержка технологии Blue VO!CE для высокого качества связи и
+          | поддержка виртуального объемного звука 7.1. GET 80% OFF DSLR PHOTOGRAPHY COURCE BUNDLE
+        button.card__button Read more
+.e-pages
+  ul.e-pages__list
+    li.e-pages__item
+      a.e-pages__link(href='#')
+        span.e-pages__text.e-pages__text--normal &lt;
+    li.e-pages__item
+      a.e-pages__link(href='#')
+        span.e-pages__text 1
+    li.e-pages__item
+      a.e-pages__link(href='#')
+        span.e-pages__text 2
+    li.e-pages__item
+      a.e-pages__link(href='#')
+        span.e-pages__text 3
+    li.e-pages__item
+      a.e-pages__link(href='#')
+        span.e-pages__text 4
+    li.e-pages__item
+      a.e-pages__link(href='#')
+        span.e-pages__text 5
+    li.e-pages__item
+      a.e-pages__link(href='#')
+        span.e-pages__text.e-pages__text--normal &gt;
+
+	+footer()
+block script
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+	script(src="https://kit.fontawesome.com/f7935cd2ed.js" crossorigin="anonymous")
+	script(src="./js/burger.js")
+	script(src="./js/modal.js") 

@@ -1,0 +1,53 @@
+.c-lang {
+  &__wrapper {
+    display: flex;
+    align-self: center;
+    padding: 20px 0;
+  }
+
+  &__form {
+    &__btn {
+      border: none;
+      outline: none;
+      background: none;
+      font-family: $f-oswald;
+      color: $c-white;
+      font-weight: bold;
+      padding: 2px;
+
+      &:hover {
+        color: $c-turquoise;
+      }
+    }
+  }
+
+  &__line {
+    color: $c-white;
+  }
+}
+
+// {
+//   background-color: $c-grey;
+//   border-radius: 5px;
+//   font-weight: bold;
+//   color: $c-white;
+//   height: 30px;
+//   width: 60px;
+//   cursor: pointer;
+//   -webkit-appearance: none;
+//   -moz-appearance: none;
+//   appearance: none;
+//   padding: 5px;
+
+//   &:focus {
+//     border-radius: 5px 5px 0 0;
+//   }
+
+//   &__setting {
+//     font-weight: bold;
+
+//     &:hover {
+//       cursor: pointer;
+//     }
+//   }
+// }

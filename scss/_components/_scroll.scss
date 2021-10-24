@@ -1,0 +1,18 @@
+.c-scroll {
+  position: fixed;
+  left: 50px;
+  top: 80vh;
+  &__btn {
+    border: none;
+    outline: none;
+    @include size(50);
+    background-color: $c-light-grey;
+    border-radius: 50%;
+    font-size: em(24);
+    color: white;
+
+    &:hover {
+      background-color: $c-dark-grey;
+    }
+  }
+}
